@@ -9,7 +9,6 @@ import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 
 const ProtectedRoute: React.FC = () => {
   const { isLoggedIn, user, logout } = useAuth();
-  console.log({ isLoggedIn });
 
   return (
     <Routes>
@@ -17,7 +16,7 @@ const ProtectedRoute: React.FC = () => {
         path="/"
         element={
           isLoggedIn ? (
-            <HomePage userName={user?.email || ""} logout={logout} />
+            <HomePage userName={user?.fullName || ""} logout={logout} />
           ) : (
             <Navigate to="/register" replace />
           )

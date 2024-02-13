@@ -4,14 +4,10 @@ import Cookies from "js-cookie";
 import { loginUser, registerUser } from "../helpers/httpHelper"; // Adjust the import path as necessary
 import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
-
-interface User {
-  email: string;
-  userId: string;
-}
+import { IUser } from "../interfaces/user_interface";
 
 interface AuthContextType {
-  user: User | null;
+  user: IUser | null;
   login: (email: string, password: string) => Promise<void>;
   register: (
     fullName: string,
@@ -29,7 +25,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<IUser | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(!!Cookies.get("token"));
   const navigate = useNavigate();
@@ -65,9 +61,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   const login = async (email: string, password: string) => {
     try {
       const response = await loginUser(email, password);
-      const { access_token } = response.data;
+      const { access_token, user } = response.data;
       Cookies.set("token", access_token, { expires: 7 });
       setIsLoggedIn(true);
+      setUser(user);
       if (response.status === 201) {
         navigate("/");
       }

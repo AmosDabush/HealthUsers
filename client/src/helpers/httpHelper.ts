@@ -8,7 +8,7 @@ const axiosInstance = axios.create({
 
 export const loginUser = async (email: string, password: string) => {
   const config: AxiosRequestConfig = {
-    url: "auth/login", // Remove leading slash if baseURL ends with one
+    url: "auth/login",
     method: "post",
     data: {
       email,
@@ -18,7 +18,12 @@ export const loginUser = async (email: string, password: string) => {
   return axiosInstance(config);
 };
 
-export const registerUser = async (fullName: string, email: string, phone: string, password: string) => {
+export const registerUser = async (
+  fullName: string,
+  email: string,
+  phone: string,
+  password: string
+) => {
   const config: AxiosRequestConfig = {
     url: "/auth/register",
     method: "post",

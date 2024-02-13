@@ -1,5 +1,6 @@
 import { Typography, Container, Button, Box } from "@mui/material";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 // import { ReactComponent as Illustration } from "../../assets/illustration.eps";
 
 const HomePage = ({
@@ -9,6 +10,9 @@ const HomePage = ({
   userName: string;
   logout: () => void;
 }) => {
+  const { user } = useAuth();
+  console.log({ user });
+
   return (
     <Container component="main" maxWidth="md">
       <Box
