@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import useAuthProtected from "../../hooks/useAuthProtected";
 import { useUsersData } from "../../hooks/useUsersData";
+import "./UsersTable.css";
 
 const UsersTable: React.FC = () => {
   useAuthProtected();
@@ -18,7 +19,7 @@ const UsersTable: React.FC = () => {
     useUsersData();
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer className="UsersTable" component={Paper}>
       <Table>
         <TableHead>
           <TableRow>

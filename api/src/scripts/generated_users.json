@@ -1,0 +1,402 @@
+[
+  {
+    "phone": "057-9986113",
+    "email": "Antonia1@yahoo.com",
+    "fullName": "Kelley Volkman",
+    "createdAt": "2023-04-18T11:35:58.793Z",
+    "updatedAt": "2023-08-27T19:31:43.767Z",
+    "password": "^(?=.x)(?=.Z)(?=..\\d)(?=....._)s{8,}$"
+  },
+  {
+    "phone": "055-9823189",
+    "email": "Henderson18@yahoo.com",
+    "fullName": "Rudy Bergstrom",
+    "createdAt": "2023-12-27T00:08:13.054Z",
+    "updatedAt": "2023-12-10T22:30:45.185Z",
+    "password": "^(?=.m)(?=.V)(?=.\\d)(?=()g{8,}$"
+  },
+  {
+    "phone": "058-0117822",
+    "email": "Wellington.Murazik@yahoo.com",
+    "fullName": "Veronica Abshire",
+    "createdAt": "2023-04-27T20:40:03.687Z",
+    "updatedAt": "2023-06-28T06:43:47.528Z",
+    "password": "^(?=d)(?=.L)(?=.\\d)(?=.))!{8,}$"
+  },
+  {
+    "phone": "054-0807301",
+    "email": "Yasmine_DAmore@gmail.com",
+    "fullName": "Buford Zulauf",
+    "createdAt": "2023-12-17T14:10:39.358Z",
+    "updatedAt": "2023-06-05T16:13:26.743Z",
+    "password": "^(?=....q)(?=.Q)(?=\\d)(?=.&)e{8,}$"
+  },
+  {
+    "phone": "055-2919652",
+    "email": "Mattie_Auer@hotmail.com",
+    "fullName": "Dayana Erdman",
+    "createdAt": "2023-10-12T23:41:43.081Z",
+    "updatedAt": "2024-02-02T03:45:32.542Z",
+    "password": "^(?=o)(?=.E)(?=...\\d)(?=..&)&{8,}$"
+  },
+  {
+    "phone": "055-2222642",
+    "email": "Edwin37@gmail.com",
+    "fullName": "Omari Dach",
+    "createdAt": "2024-01-28T01:02:19.320Z",
+    "updatedAt": "2023-08-14T10:51:22.222Z",
+    "password": "^(?=.c)(?=.C)(?=\\d)(?=))d{8,}$"
+  },
+  {
+    "phone": "054-3658358",
+    "email": "Berniece_Hermann65@hotmail.com",
+    "fullName": "Malinda Renner",
+    "createdAt": "2023-09-17T05:28:23.376Z",
+    "updatedAt": "2023-03-17T13:37:56.281Z",
+    "password": "^(?=....m)(?=..D)(?=.\\d)(?=.@)N{8,}$"
+  },
+  {
+    "phone": "050-6184034",
+    "email": "Carlee.Armstrong@gmail.com",
+    "fullName": "Claud Kunde",
+    "createdAt": "2023-03-07T08:34:41.931Z",
+    "updatedAt": "2023-05-02T14:11:51.306Z",
+    "password": "^(?=.b)(?=K)(?=.........\\d)(?=!)B{8,}$"
+  },
+  {
+    "phone": "053-9533627",
+    "email": "Jackie.Jacobson@gmail.com",
+    "fullName": "Lizzie Pagac",
+    "createdAt": "2023-07-30T04:48:42.966Z",
+    "updatedAt": "2023-07-24T19:33:05.477Z",
+    "password": "^(?=i)(?=..C)(?=........................................................\\d)(?=()n{8,}$"
+  },
+  {
+    "phone": "051-9742420",
+    "email": "Richie33@hotmail.com",
+    "fullName": "Craig Parker",
+    "createdAt": "2023-10-13T05:30:09.023Z",
+    "updatedAt": "2024-02-08T17:38:27.801Z",
+    "password": "^(?=k)(?=..S)(?=\\d)(?=....&)i{8,}$"
+  },
+  {
+    "phone": "050-5300356",
+    "email": "Lucius17@yahoo.com",
+    "fullName": "Brock Nader",
+    "createdAt": "2023-08-01T08:28:01.213Z",
+    "updatedAt": "2023-05-30T02:47:44.569Z",
+    "password": "^(?=..a)(?=.Z)(?=.......\\d)(?=$)!{8,}$"
+  },
+  {
+    "phone": "058-7394718",
+    "email": "Theresia.West@gmail.com",
+    "fullName": "Lacy Berge",
+    "createdAt": "2024-01-24T21:57:05.334Z",
+    "updatedAt": "2023-07-31T15:25:01.030Z",
+    "password": "^(?=................................................z)(?=.F)(?=...\\d)(?=.!)y{8,}$"
+  },
+  {
+    "phone": "056-2211736",
+    "email": "Gudrun_Beer@gmail.com",
+    "fullName": "Consuelo Feest",
+    "createdAt": "2023-09-15T19:24:42.321Z",
+    "updatedAt": "2024-01-05T18:49:52.245Z",
+    "password": "^(?=.c)(?=B)(?=..\\d)(?=+)L{8,}$"
+  },
+  {
+    "phone": "052-2004199",
+    "email": "Ervin63@yahoo.com",
+    "fullName": "Gertrude Altenwerth",
+    "createdAt": "2024-01-10T07:18:23.453Z",
+    "updatedAt": "2023-10-12T14:37:21.253Z",
+    "password": "^(?=.x)(?=.....E)(?=\\d)(?=()d{8,}$"
+  },
+  {
+    "phone": "052-3286817",
+    "email": "Lambert65@yahoo.com",
+    "fullName": "Olga Cruickshank",
+    "createdAt": "2023-12-09T08:32:14.496Z",
+    "updatedAt": "2023-04-11T02:20:58.248Z",
+    "password": "^(?=.y)(?=.....O)(?=\\d)(?=))I{8,}$"
+  },
+  {
+    "phone": "052-2054603",
+    "email": "Sebastian_Hessel@gmail.com",
+    "fullName": "Deven Sporer",
+    "createdAt": "2023-09-25T20:21:35.287Z",
+    "updatedAt": "2023-03-21T08:49:40.595Z",
+    "password": "^(?=..k)(?=..M)(?=....\\d)(?=_)J{8,}$"
+  },
+  {
+    "phone": "050-2123318",
+    "email": "Sunny.Lindgren88@yahoo.com",
+    "fullName": "Paris Nitzsche",
+    "createdAt": "2023-10-21T16:46:52.343Z",
+    "updatedAt": "2023-06-14T19:13:12.464Z",
+    "password": "^(?=a)(?=F)(?=.\\d)(?=.$)K{8,}$"
+  },
+  {
+    "phone": "058-0225455",
+    "email": "Ruth_Predovic26@gmail.com",
+    "fullName": "Minnie Kihn",
+    "createdAt": "2023-07-23T04:05:02.664Z",
+    "updatedAt": "2023-11-11T19:09:31.798Z",
+    "password": "^(?=.o)(?=E)(?=\\d)(?=............................_)+{8,}$"
+  },
+  {
+    "phone": "055-0493101",
+    "email": "Allen_Glover@yahoo.com",
+    "fullName": "Tatum Farrell",
+    "createdAt": "2023-12-10T10:01:25.707Z",
+    "updatedAt": "2023-10-17T11:55:41.026Z",
+    "password": "^(?=v)(?=.U)(?=....\\d)(?=.$)G{8,}$"
+  },
+  {
+    "phone": "051-2633468",
+    "email": "Quinn39@hotmail.com",
+    "fullName": "Emmalee McGlynn",
+    "createdAt": "2023-09-28T20:23:07.119Z",
+    "updatedAt": "2023-04-15T06:29:28.213Z",
+    "password": "^(?=w)(?=.Z)(?=..\\d)(?=@)X{8,}$"
+  },
+  {
+    "phone": "056-6512660",
+    "email": "Rogers.Lind56@yahoo.com",
+    "fullName": "Alexandrine Dibbert",
+    "createdAt": "2023-06-09T09:20:27.071Z",
+    "updatedAt": "2023-08-07T12:32:04.908Z",
+    "password": "^(?=g)(?=I)(?=\\d)(?=#)c{8,}$"
+  },
+  {
+    "phone": "058-2803643",
+    "email": "Sofia_Ritchie55@yahoo.com",
+    "fullName": "Johnny Goodwin",
+    "createdAt": "2023-08-20T01:34:44.338Z",
+    "updatedAt": "2024-01-29T10:52:37.931Z",
+    "password": "^(?=l)(?=..F)(?=.\\d)(?=!)z{8,}$"
+  },
+  {
+    "phone": "055-7568074",
+    "email": "Saige_Williamson79@gmail.com",
+    "fullName": "Verona Hammes",
+    "createdAt": "2023-11-09T00:41:10.351Z",
+    "updatedAt": "2023-10-25T19:15:29.432Z",
+    "password": "^(?=z)(?=E)(?=\\d)(?=.&)I{8,}$"
+  },
+  {
+    "phone": "051-0395315",
+    "email": "Albert28@gmail.com",
+    "fullName": "Leanna Koepp",
+    "createdAt": "2023-03-03T21:46:13.910Z",
+    "updatedAt": "2023-04-07T08:33:27.392Z",
+    "password": "^(?=w)(?=................E)(?=..\\d)(?=@)Q{8,}$"
+  },
+  {
+    "phone": "050-2591838",
+    "email": "Rowena_Lesch54@gmail.com",
+    "fullName": "Jabari Wiza",
+    "createdAt": "2023-08-01T15:31:12.872Z",
+    "updatedAt": "2023-05-05T06:27:45.343Z",
+    "password": "^(?=.q)(?=.G)(?=.\\d)(?=.&)b{8,}$"
+  },
+  {
+    "phone": "056-9013313",
+    "email": "Price_Nienow@yahoo.com",
+    "fullName": "Vincenzo Upton",
+    "createdAt": "2023-12-09T07:55:31.438Z",
+    "updatedAt": "2023-05-06T04:36:17.251Z",
+    "password": "^(?=....................c)(?=...A)(?=.\\d)(?=_)V{8,}$"
+  },
+  {
+    "phone": "059-0170874",
+    "email": "Ethelyn44@gmail.com",
+    "fullName": "Rashad Schulist",
+    "createdAt": "2023-09-06T22:20:49.984Z",
+    "updatedAt": "2023-11-06T13:38:20.064Z",
+    "password": "^(?=d)(?=.................T)(?=\\d)(?=+)I{8,}$"
+  },
+  {
+    "phone": "051-1169450",
+    "email": "Nicolette51@hotmail.com",
+    "fullName": "Rebekah Mills",
+    "createdAt": "2023-03-11T09:52:42.996Z",
+    "updatedAt": "2023-11-06T08:14:12.786Z",
+    "password": "^(?=.l)(?=.A)(?=\\d)(?=()q{8,}$"
+  },
+  {
+    "phone": "055-3176516",
+    "email": "Celestino.Bahringer5@hotmail.com",
+    "fullName": "Rigoberto Farrell",
+    "createdAt": "2023-05-09T14:02:50.380Z",
+    "updatedAt": "2023-10-20T18:23:56.578Z",
+    "password": "^(?=..y)(?=G)(?=\\d)(?=._)d{8,}$"
+  },
+  {
+    "phone": "052-7102394",
+    "email": "Larue28@yahoo.com",
+    "fullName": "Mariela Zboncak",
+    "createdAt": "2023-02-21T08:48:38.667Z",
+    "updatedAt": "2023-02-21T09:05:24.934Z",
+    "password": "^(?=.j)(?=.B)(?=.....\\d)(?=.&)j{8,}$"
+  },
+  {
+    "phone": "056-0531143",
+    "email": "Heather_Keebler23@gmail.com",
+    "fullName": "Kirk DuBuque",
+    "createdAt": "2023-04-15T22:12:27.363Z",
+    "updatedAt": "2023-12-14T01:18:57.025Z",
+    "password": "^(?=.h)(?=.E)(?=........\\d)(?=..&)S{8,}$"
+  },
+  {
+    "phone": "055-1346181",
+    "email": "Arvel_Bayer36@yahoo.com",
+    "fullName": "Sibyl Kassulke",
+    "createdAt": "2023-03-20T12:09:50.375Z",
+    "updatedAt": "2023-09-13T01:02:20.822Z",
+    "password": "^(?=q)(?=.....L)(?=.\\d)(?=._)M{8,}$"
+  },
+  {
+    "phone": "059-3009883",
+    "email": "Rico.Waelchi@gmail.com",
+    "fullName": "Mathilde O'Reilly",
+    "createdAt": "2023-07-22T14:25:57.919Z",
+    "updatedAt": "2023-08-31T01:59:03.973Z",
+    "password": "^(?=.z)(?=N)(?=............................................................................................................\\d)(?=.!)d{8,}$"
+  },
+  {
+    "phone": "059-4108980",
+    "email": "Demarco79@hotmail.com",
+    "fullName": "Luisa Boyer",
+    "createdAt": "2024-01-05T01:47:13.313Z",
+    "updatedAt": "2023-10-15T02:01:02.888Z",
+    "password": "^(?=q)(?=Z)(?=\\d)(?=...........()({8,}$"
+  },
+  {
+    "phone": "053-6698056",
+    "email": "Dominique.Parisian@yahoo.com",
+    "fullName": "Shaina Lindgren",
+    "createdAt": "2023-06-25T05:56:18.331Z",
+    "updatedAt": "2024-01-27T11:47:26.175Z",
+    "password": "^(?=..i)(?=Q)(?=.\\d)(?=.!)P{8,}$"
+  },
+  {
+    "phone": "057-5369270",
+    "email": "Abagail_Bailey99@gmail.com",
+    "fullName": "Hilario Mills",
+    "createdAt": "2024-01-29T19:19:53.083Z",
+    "updatedAt": "2023-06-30T01:48:53.035Z",
+    "password": "^(?=.w)(?=.I)(?=.....\\d)(?=&)D{8,}$"
+  },
+  {
+    "phone": "053-7196470",
+    "email": "Keira_Kassulke@gmail.com",
+    "fullName": "Christ Cummings",
+    "createdAt": "2023-07-31T02:19:58.843Z",
+    "updatedAt": "2023-07-30T03:21:30.052Z",
+    "password": "^(?=.j)(?=....F)(?=..\\d)(?=................................$)a{8,}$"
+  },
+  {
+    "phone": "052-2176242",
+    "email": "Peggie.Daniel95@gmail.com",
+    "fullName": "Albina Kertzmann",
+    "createdAt": "2023-03-03T20:52:18.469Z",
+    "updatedAt": "2024-01-15T11:09:08.309Z",
+    "password": "^(?=.o)(?=.L)(?=\\d)(?=()d{8,}$"
+  },
+  {
+    "phone": "057-7300884",
+    "email": "Palma58@yahoo.com",
+    "fullName": "Beryl Mitchell",
+    "createdAt": "2024-01-16T03:30:44.155Z",
+    "updatedAt": "2023-08-25T03:43:55.342Z",
+    "password": "^(?=.m)(?=.W)(?=...\\d)(?=.&)d{8,}$"
+  },
+  {
+    "phone": "052-6050579",
+    "email": "Gilbert_Stiedemann95@gmail.com",
+    "fullName": "Marguerite Hauck",
+    "createdAt": "2023-07-31T00:25:16.534Z",
+    "updatedAt": "2024-01-09T11:20:40.464Z",
+    "password": "^(?=.r)(?=.I)(?=...\\d)(?=()&{8,}$"
+  },
+  {
+    "phone": "058-6936243",
+    "email": "Wilfredo_Ankunding53@yahoo.com",
+    "fullName": "Lexus Smith",
+    "createdAt": "2023-06-30T11:30:11.131Z",
+    "updatedAt": "2023-10-24T12:07:16.599Z",
+    "password": "^(?=.l)(?=Z)(?=..............................\\d)(?=&)D{8,}$"
+  },
+  {
+    "phone": "057-0598455",
+    "email": "Jarrod_Lesch45@yahoo.com",
+    "fullName": "Emiliano Kuhn",
+    "createdAt": "2023-12-14T21:12:45.135Z",
+    "updatedAt": "2023-06-20T20:23:30.594Z",
+    "password": "^(?=..g)(?=A)(?=\\d)(?=.&)({8,}$"
+  },
+  {
+    "phone": "056-0566443",
+    "email": "Macey74@yahoo.com",
+    "fullName": "Lula Nicolas",
+    "createdAt": "2023-03-02T13:41:02.380Z",
+    "updatedAt": "2024-01-18T02:28:40.970Z",
+    "password": "^(?=c)(?=Q)(?=.............................\\d)(?=()E{8,}$"
+  },
+  {
+    "phone": "058-7685295",
+    "email": "Name_Kerluke40@gmail.com",
+    "fullName": "Malika Bins",
+    "createdAt": "2023-05-15T21:09:00.607Z",
+    "updatedAt": "2024-02-02T14:53:34.452Z",
+    "password": "^(?=..f)(?=T)(?=.\\d)(?=._)M{8,}$"
+  },
+  {
+    "phone": "051-7922526",
+    "email": "Onie.Effertz98@gmail.com",
+    "fullName": "Juliana Ward",
+    "createdAt": "2024-02-09T20:50:35.559Z",
+    "updatedAt": "2023-05-10T10:01:16.934Z",
+    "password": "^(?=v)(?=I)(?=\\d)(?=.@)V{8,}$"
+  },
+  {
+    "phone": "058-3178060",
+    "email": "Alfonso.Reichel58@gmail.com",
+    "fullName": "Maci Daniel",
+    "createdAt": "2023-11-02T22:12:39.375Z",
+    "updatedAt": "2023-06-06T12:29:08.797Z",
+    "password": "^(?=..x)(?=L)(?=..\\d)(?=..................._)E{8,}$"
+  },
+  {
+    "phone": "052-0844624",
+    "email": "Zion_Doyle@yahoo.com",
+    "fullName": "Kelton Miller",
+    "createdAt": "2023-05-11T19:21:54.375Z",
+    "updatedAt": "2023-11-04T18:58:29.733Z",
+    "password": "^(?=u)(?=Y)(?=.\\d)(?=.&)v{8,}$"
+  },
+  {
+    "phone": "055-1636688",
+    "email": "Jalyn20@yahoo.com",
+    "fullName": "Flavie Brakus",
+    "createdAt": "2023-10-23T15:11:26.942Z",
+    "updatedAt": "2023-11-06T21:48:50.536Z",
+    "password": "^(?=w)(?=.F)(?=\\d)(?=!)f{8,}$"
+  },
+  {
+    "phone": "058-0560822",
+    "email": "Brain.Brekke@gmail.com",
+    "fullName": "Gage Douglas",
+    "createdAt": "2023-04-07T14:34:43.752Z",
+    "updatedAt": "2023-04-05T13:14:50.142Z",
+    "password": "^(?=..a)(?=T)(?=\\d)(?=()&{8,}$"
+  },
+  {
+    "phone": "059-0892702",
+    "email": "Elian28@yahoo.com",
+    "fullName": "Emily O'Keefe",
+    "createdAt": "2023-09-14T10:56:15.818Z",
+    "updatedAt": "2023-09-27T06:20:12.458Z",
+    "password": "^(?=..s)(?=G)(?=\\d)(?=!)H{8,}$"
+  }
+]

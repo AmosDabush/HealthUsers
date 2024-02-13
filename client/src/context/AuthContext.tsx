@@ -1,7 +1,6 @@
-// src/context/AuthContext.tsx
 import React, { createContext, useContext, useState, useEffect } from "react";
 import Cookies from "js-cookie";
-import { loginUser, registerUser } from "../helpers/httpHelper"; // Adjust the import path as necessary
+import { loginUser, registerUser } from "../helpers/httpHelper";
 import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 import { IUser } from "../interfaces/user_interface";

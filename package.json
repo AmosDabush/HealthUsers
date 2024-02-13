@@ -1,0 +1,14 @@
+{
+  "name": "helth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed": "cd api && npm run seed",
+    "seed:new": "yarn generate:users && yarn seed",
+    "generate:users":"cd userGenerator && npm run generate",
+    "dev": "docker compose up --build"
+    },
+  "author": "",
+  "license": "ISC"
+}

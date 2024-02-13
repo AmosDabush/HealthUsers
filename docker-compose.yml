@@ -15,11 +15,18 @@ services:
       - amos-network
     depends_on:
       - mongo
-    healthcheck:
-      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
+
+  # client:
+  #   build:
+  #     context: ./client
+  #   ports:
+  #     - "80:5173"
+  #     - "8080:80"
+  #   environment:
+  #     NODE_ENV: development
+  #   networks:
+  #     - amos-network
+
   mongo:
     container_name: mongo
     image: mongo

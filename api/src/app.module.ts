@@ -13,7 +13,7 @@ import { MongooseModule } from "@nestjs/mongoose";
     ConfigModule.forRoot({
       isGlobal: true,
     }),
-    MongooseModule.forRoot("mongodb://localhost", {
+    MongooseModule.forRoot("mongodb://mongo:27017", {
       dbName: "health",
     }),
   ],

@@ -6,6 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "seed": "cd src/scripts && chmod +x import-script.sh && ./import-script.sh ",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "dev": "nest start --watch --webpack --webpackPath ./webpack-hmr.config.js",
