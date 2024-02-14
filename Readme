@@ -1,0 +1,85 @@
+# Health User Management System
+
+## Overview
+
+The Health Management System is a full-stack application aimed at providing a comprehensive solution for health and user management. It features a robust backend API built with NestJS and a dynamic, responsive frontend created with React and Vite. This system is designed to streamline the process of user registration, authentication, and management, offering a seamless user experience bolstered by modern security measures.
+
+## Key Technologies
+
+- **NestJS**: Utilized for its efficiency in building scalable server-side applications.
+- **React**: Chosen for its component-based architecture, facilitating the development of a responsive UI.
+- **Vite**: Employed for fast development setup and optimized production builds.
+- **JWT Authentication**: Ensures secure access to the application's features.
+- **Docker**: Used for containerizing the application, simplifying deployment and ensuring consistency across environments.
+- **MongoDB**: (Assumed based on usage patterns) Provides a flexible, scalable NoSQL database solution.
+
+## Features
+
+### Backend (API)
+
+- **User Registration & Authentication**: Facilitates secure user sign-up and login processes.
+- **JWT Token Management**: Manages session tokens for authentication and secure access.
+- **API Endpoints**: Includes endpoints for user management (`/api/users`), registration (`/api/auth/register`), and login (`/api/auth/login`).
+
+### Frontend (Client)
+
+- **Protected Routes**: Implements logic to redirect users based on their authentication status:
+  - Unauthenticated users are redirected from `/` to `/register` to encourage account creation.
+  - Expired sessions prompt redirection to `/login` for re-authentication.
+  - Authenticated users can access user listings and home page.
+- **User Interface & Experience**: Developed using React with Material-UI, ensuring a modern and intuitive interaction model.
+- **Dynamic User Listing with Sorting**: Provides a sortable table of users, enhancing data interaction without additional backend requests.
+
+### User Generator
+
+- **Mock Data Creation**: The `userGenerator` script generates JSON-formatted mock user data, aiding in database seeding.
+- **Database Seeding**: Leveraging `import-script.sh`, the system can automatically populate the database with generated user data for testing or development purposes.
+
+## Getting Started
+
+### Installation
+```bash
+# Install All Project dependencies
+yarn setup
+
+# Start the App (server, db, client)
+npm run start
+
+# will seed db with 50 new mock user (In new terminal after db is running) 
+npm seed:new
+```
+
+
+OR (if you don't like my setup script)
+
+```bash
+# Install API dependencies
+cd api
+npm install
+
+# Install client dependencies
+cd client
+npm install
+
+# Start the client application
+npm run start
+
+# will seed db with 50 new mock user (In new terminal after db is running) 
+npm seed:new
+```
+
+## Project Structure
+
+- `api/`: NestJS backend application.
+- `client/`: React frontend application.
+- `userGenerator/`: Utility for generating mock user data.
+
+## Contributing
+
+Contributions to the Health Management System are welcome! Please review our contribution guidelines for more information on how to contribute.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
+
+---
