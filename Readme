@@ -1,85 +1,220 @@
+
 # Health User Management System
 
 ## Overview
 
-The Health Management System is a full-stack application aimed at providing a comprehensive solution for health and user management. It features a robust backend API built with NestJS and a dynamic, responsive frontend created with React and Vite. This system is designed to streamline the process of user registration, authentication, and management, offering a seamless user experience bolstered by modern security measures.
+The Health User Management System is a sophisticated full-stack application dedicated to simplifying health and user management. It integrates a powerful NestJS backend with a dynamic React frontend, leveraging Vite for an enhanced development experience. This solution aims to streamline user registration, authentication, and management processes, backed by modern security standards.
 
 ## Key Technologies
 
-- **NestJS**: Utilized for its efficiency in building scalable server-side applications.
-- **React**: Chosen for its component-based architecture, facilitating the development of a responsive UI.
-- **Vite**: Employed for fast development setup and optimized production builds.
-- **JWT Authentication**: Ensures secure access to the application's features.
-- **Docker**: Used for containerizing the application, simplifying deployment and ensuring consistency across environments.
-- **MongoDB**: (Assumed based on usage patterns) Provides a flexible, scalable NoSQL database solution.
+- **NestJS**: For scalable server-side application development.
+- **React**: For building a responsive and component-driven UI.
+- **Vite**: For rapid development and efficient production builds.
+- **JWT Authentication**: For secure user access and session management.
+- **Docker**: For consistent deployments via containerization.
+- **MongoDB**: Assumed for its flexibility as a NoSQL database solution.
 
 ## Features
 
 ### Backend (API)
 
-- **User Registration & Authentication**: Facilitates secure user sign-up and login processes.
-- **JWT Token Management**: Manages session tokens for authentication and secure access.
-- **API Endpoints**: Includes endpoints for user management (`/api/users`), registration (`/api/auth/register`), and login (`/api/auth/login`).
+- Secure user registration and login.
+- JWT token management for authentication and access control.
+- Comprehensive API endpoints for user management.
 
 ### Frontend (Client)
 
-- **Protected Routes**: Implements logic to redirect users based on their authentication status:
-  - Unauthenticated users are redirected from `/` to `/register` to encourage account creation.
-  - Expired sessions prompt redirection to `/login` for re-authentication.
-  - Authenticated users can access user listings and home page.
-- **User Interface & Experience**: Developed using React with Material-UI, ensuring a modern and intuitive interaction model.
-- **Dynamic User Listing with Sorting**: Provides a sortable table of users, enhancing data interaction without additional backend requests.
+- **Protected Routes & Authentication Flow**:
+  - Redirects for unauthenticated users to encourage registration.
+  - Session expiration handling to maintain security.
+  - Access control based on user authentication status.
+- **Design & User Experience**:
+  - Developed with React and Material-UI for a contemporary, intuitive user interface.
+  - Supports dark mode, enhancing visual comfort and accessibility.
+- **Material-UI Theming**:
+  - Implements a custom theme for light and dark modes, easily toggled through the UI.
+- **Dynamic User Listing**:
+  - A sortable and interactive table for user management, with backend-supported sorting features.
 
 ### User Generator
 
-- **Mock Data Creation**: The `userGenerator` script generates JSON-formatted mock user data, aiding in database seeding.
-- **Database Seeding**: Leveraging `import-script.sh`, the system can automatically populate the database with generated user data for testing or development purposes.
+- Generates mock user data for database seeding.
+- Simplifies development and testing with `import-script.sh` for database population.
 
 ## Getting Started
 
-### Installation
+### Quick Setup
+
 ```bash
-# Install All Project dependencies
+# Install dependencies and start the application
 yarn setup
 
-# Start the App (server, db, client)
+# Start the app with docker compose
 npm run start
 
-# will seed db with 50 new mock user (In new terminal after db is running) 
-npm seed:new
+# Seed the database with mock users
+npm run seed:new
 ```
 
-
-OR (if you don't like my setup script)
+OR, for manual setup:
 
 ```bash
-# Install API dependencies
+# Backend setup
 cd api
 npm install
 
-# Install client dependencies
+# Client setup
 cd client
 npm install
 
-# Start the client application
+# userGenerator setup
+cd userGenerator
+npm install
+
+# Start the app with docker compose
 npm run start
 
-# will seed db with 50 new mock user (In new terminal after db is running) 
-npm seed:new
+# Seed the database
+npm run seed:new
 ```
+
+## Project Insights
+
+- **Client Architecture**:
+  - **Hook Separation**: Custom hooks for authentication, form handling, and data fetching to encapsulate logic and promote reuse.
+  - **Dumb Components**: UI components focus on presentation, driven by props for versatility and testing ease.
+- **Dark Mode Switch**: A toggleable component allows users to switch between light and dark themes dynamically, stored in local preferences for persistent user experience.
+- **Material-UI Customization**: Demonstrates best practices in applying a unified look and feel across the application while allowing for theme flexibility.
 
 ## Project Structure
 
-- `api/`: NestJS backend application.
-- `client/`: React frontend application.
-- `userGenerator/`: Utility for generating mock user data.
+- `api/`: Contains the NestJS backend.
+- `client/`: Houses the React frontend.
+- `userGenerator/`: Scripts for mock data generation.
 
 ## Contributing
 
-Contributions to the Health Management System are welcome! Please review our contribution guidelines for more information on how to contribute.
+We welcome contributions! Please see our contribution guidelines for more information.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the MIT License. View [LICENSE](LICENSE.md) for details.
 
----
+```├── api
+│   ├── Dockerfile
+│   ├── nest-cli.json
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── README.md
+│   ├── src
+│   │   ├── app.controller.spec.ts
+│   │   ├── app.controller.ts
+│   │   ├── app.module.ts
+│   │   ├── app.service.ts
+│   │   ├── auth
+│   │   │   ├── auth.controller.spec.ts
+│   │   │   ├── auth.controller.ts
+│   │   │   ├── auth.module.ts
+│   │   │   ├── auth.service.spec.ts
+│   │   │   ├── auth.service.ts
+│   │   │   ├── dto
+│   │   │   │   ├── create-user.dto.ts
+│   │   │   │   └── login.dto.ts
+│   │   │   ├── guards
+│   │   │   │   └── jwt-auth.guard.ts
+│   │   │   └── strategies
+│   │   │       └── jwt.strategy.ts
+│   │   ├── main.ts
+│   │   ├── scripts
+│   │   │   ├── generated_users.json
+│   │   │   └── import-script.sh
+│   │   └── users
+│   │       ├── interfaces
+│   │       │   └── user.interface.ts
+│   │       ├── schemas
+│   │       │   └── user.schema.ts
+│   │       ├── users.controller.spec.ts
+│   │       ├── users.controller.ts
+│   │       ├── users.module.ts
+│   │       ├── users.service.spec.ts
+│   │       └── users.service.ts
+│   ├── test
+│   │   ├── app.e2e-spec.ts
+│   │   └── jest-e2e.json
+│   ├── tsconfig.build.json
+│   └── tsconfig.json
+├── client
+│   ├── Dockerfile
+│   ├── index.html
+│   ├── nginx.conf
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public
+│   │   └── vite.svg
+│   ├── README.md
+│   ├── src
+│   │   ├── App.css
+│   │   ├── App.tsx
+│   │   ├── assets
+│   │   │   ├── 404.webp
+│   │   │   ├── lightModeBackground.webp
+│   │   │   └── react.svg
+│   │   ├── context
+│   │   │   └── AuthContext.tsx
+│   │   ├── helpers
+│   │   │   ├── httpHelper.ts
+│   │   │   └── validationHelper.ts
+│   │   ├── hooks
+│   │   │   ├── useAuthProtected.ts
+│   │   │   ├── useAxios.ts
+│   │   │   ├── useLoginForm.ts
+│   │   │   ├── useRegisterForm.ts
+│   │   │   └── useUsersData.ts
+│   │   ├── index.css
+│   │   ├── interfaces
+│   │   │   └── user_interface.ts
+│   │   ├── main.tsx
+│   │   ├── pages
+│   │   │   ├── HomePage
+│   │   │   │   └── HomePage.tsx
+│   │   │   ├── LoginPage
+│   │   │   │   ├── LoginPage.css
+│   │   │   │   └── LoginPage.tsx
+│   │   │   ├── NotFoundPage
+│   │   │   │   ├── NotFoundPage.css
+│   │   │   │   └── NotFoundPage.tsx
+│   │   │   ├── RegisterPage
+│   │   │   │   ├── RegisterPage.css
+│   │   │   │   └── RegisterPage.tsx
+│   │   │   └── UsersPage
+│   │   │       └── UsersPage.tsx
+│   │   ├── partials
+│   │   │   ├── DarkModeSwitch
+│   │   │   │   ├── DarkModeSwitch.css
+│   │   │   │   └── DarkModeSwitch.tsx
+│   │   │   ├── Header
+│   │   │   │   ├── Header.css
+│   │   │   │   └── Header.tsx
+│   │   │   ├── LoginForm
+│   │   │   │   └── LoginForm.tsx
+│   │   │   ├── RegisterForm
+│   │   │   │   └── RegisterForm.tsx
+│   │   │   └── UsersTable
+│   │   │       ├── UsersTable.css
+│   │   │       └── UsersTable.tsx
+│   │   ├── routes
+│   │   │   └── ProtectedRoute.tsx
+│   │   ├── themes
+│   │   │   └── themes.ts
+│   │   └── vite-env.d.ts
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+├── docker-compose.yml
+├── package.json
+├── setup.js
+└── userGenerator
+    ├── generator.js
+    ├── package.json
+    ├── package-lock.json
+    └── yarn.lock```
