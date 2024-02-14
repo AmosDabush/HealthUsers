@@ -5,6 +5,7 @@ services:
       context: ./api
     ports:
       - "3000:3000"
+    command: npm run start:debug
     environment:
       NODE_ENV: development
       MONGODB_URI: mongodb://mongo:27017/health
