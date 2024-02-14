@@ -1,15 +1,23 @@
-import React from "react";
-import { Button, TextField } from "@mui/material";
+import React, { useState } from "react";
+import { Button, TextField, InputAdornment, IconButton } from "@mui/material";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import { useLoginForm } from "../../hooks/useLoginForm";
 
 const LoginForm: React.FC = () => {
+  const [showPassword, setShowPassword] = useState(false);
   const {
     email,
     password,
     handleChangeEmail,
     handleChangePassword,
     handleSubmit,
+    errors,
   } = useLoginForm();
+
+  const handleTogglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
 
   return (
     <form className="form" onSubmit={handleSubmit}>
@@ -25,6 +33,8 @@ const LoginForm: React.FC = () => {
         autoFocus
         value={email}
         onChange={handleChangeEmail}
+        error={errors.email !== ""}
+        helperText={errors.email}
       />
       <TextField
         variant="outlined"
@@ -33,11 +43,27 @@ const LoginForm: React.FC = () => {
         fullWidth
         name="password"
         label="Password"
-        type="password"
+        type={showPassword ? "text" : "password"}
         id="password"
         autoComplete="current-password"
         value={password}
         onChange={handleChangePassword}
+        error={errors.password !== ""}
+        helperText={errors.password}
+        InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+              <IconButton
+                aria-label="toggle password visibility"
+                onClick={handleTogglePasswordVisibility}
+                onMouseDown={(e) => e.preventDefault()}
+                edge="end"
+              >
+                {showPassword ? <VisibilityOff /> : <Visibility />}
+              </IconButton>
+            </InputAdornment>
+          ),
+        }}
       />
       <Button
         type="submit"

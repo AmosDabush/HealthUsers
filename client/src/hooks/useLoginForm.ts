@@ -1,17 +1,30 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import { useAuth } from "../context/AuthContext";
+import { validateEmail, validatePassword } from "../helpers/validationHelper";
 
 export const useLoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState({ email: "", password: "" });
   const { login } = useAuth();
 
   const handleChangeEmail = (event: ChangeEvent<HTMLInputElement>) => {
-    setEmail(event.target.value);
+    const { value } = event.target;
+    setEmail(value);
+    if (!validateEmail(value)) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        email: "Please enter a valid email address",
+      }));
+    } else {
+      setErrors((prevErrors) => ({ ...prevErrors, email: "" }));
+    }
   };
 
   const handleChangePassword = (event: ChangeEvent<HTMLInputElement>) => {
-    setPassword(event.target.value);
+    const { value } = event.target;
+    setPassword(value);
+    setErrors((prevErrors) => ({ ...prevErrors, password: "" }));
   };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -26,6 +39,7 @@ export const useLoginForm = () => {
   return {
     email,
     password,
+    errors,
     handleChangeEmail,
     handleChangePassword,
     handleSubmit,

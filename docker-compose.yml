@@ -16,16 +16,16 @@ services:
     depends_on:
       - mongo
 
-  # client:
-  #   build:
-  #     context: ./client
-  #   ports:
-  #     - "80:5173"
-  #     - "8080:80"
-  #   environment:
-  #     NODE_ENV: development
-  #   networks:
-  #     - amos-network
+  client:
+    build:
+      context: ./client
+    ports:
+      - "80:5173"
+      - "8080:80"
+    environment:
+      NODE_ENV: development
+    networks:
+      - amos-network
 
   mongo:
     container_name: mongo
