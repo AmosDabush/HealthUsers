@@ -15,9 +15,7 @@ const useAuthProtected = (): void => {
     }
 
     const decoded = jwtDecode(token);
-    console.log({ decoded: decoded, token: token });
     const tokenExpiration = decoded.exp ? decoded.exp * 1000 : 0;
-    console.log("tokenExpiration", tokenExpiration);
     if (tokenExpiration) {
       const expirationDate = new Date(tokenExpiration);
 

@@ -1,27 +1,29 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import Cookies from "js-cookie";
 import { IUser } from "../interfaces/user_interface";
+import useAxios from "./useAxios";
 
 type Order = "asc" | "desc";
 
 export const useUsersData = () => {
-  const [users, setUsers] = useState<IUser[]>([]);
+  const {
+    data: users,
+    isLoading,
+    error,
+    refetch,
+  } = useAxios<IUser[], IUser[]>({
+    url: "http://localhost:3000/api/users/",
+    method: "get",
+    config: {
+      headers: { Authorization: `Bearer ${Cookies.get("token")}` },
+    },
+  });
+
   const [orderDirection, setOrderDirection] = useState<Order>("asc");
   const [valueToOrderBy, setValueToOrderBy] = useState<keyof IUser>("fullName");
 
   useEffect(() => {
-    const fetchUsers = async () => {
-      const response = await axios.get<IUser[]>(
-        "http://localhost:3000/api/users/",
-        {
-          headers: { Authorization: `Bearer ${Cookies.get("token")}` },
-        }
-      );
-      setUsers(response.data);
-    };
-
-    fetchUsers();
+    refetch();
   }, []);
 
   const handleRequestSort = (property: keyof IUser) => {
@@ -62,9 +64,14 @@ export const useUsersData = () => {
   };
 
   return {
-    users: sortedUsers(users, getComparator(orderDirection, valueToOrderBy)),
+    users: sortedUsers(
+      users || [],
+      getComparator(orderDirection, valueToOrderBy)
+    ),
     orderDirection,
     valueToOrderBy,
     handleRequestSort,
+    isLoading,
+    error,
   };
 };

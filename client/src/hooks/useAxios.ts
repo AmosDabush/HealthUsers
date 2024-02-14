@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import axios, {
   AxiosRequestConfig,
-  AxiosResponse,
   AxiosError,
   CancelTokenSource,
 } from "axios";
@@ -22,7 +21,6 @@ type UseAxiosReturn<T> = {
   refetch: () => void;
 };
 
-// The useAxios hook
 const useAxios = <T, K>({
   url,
   method = "get",
@@ -67,11 +65,9 @@ const useAxios = <T, K>({
     };
     fetch();
 
-    // Cleanup function only cancels if the component unmounts
     return () => source.cancel("Operation canceled by the user.");
   }, [url, method, body, trigger, ...dependencies]);
 
-  // Function to manually trigger a re-fetch
   const refetch = () => {
     cancelToken.current.cancel("Operation canceled due to new request.");
   };

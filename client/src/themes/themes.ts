@@ -1,24 +1,22 @@
 import { createTheme } from "@mui/material/styles";
 import lightModeBackground from "../assets/lightModeBackground.webp";
-// import darkModeBackground from "../assets/darkModeBackground.png";
 
-// Light theme configuration
 export const lightTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#6200EE", // Purple
+      main: "#6200EE",
     },
     secondary: {
-      main: "#03DAC6", // Turquoise
+      main: "#03DAC6",
     },
     background: {
-      default: lightModeBackground, // Light Grey
-      paper: "#a9c8d0", // White
+      default: lightModeBackground,
+      paper: "#a9c8d0",
     },
     text: {
-      primary: "#333333", // Dark Grey
-      secondary: "#666666", // Light Grey
+      primary: "#333333",
+      secondary: "#666666",
     },
   },
   typography: {
@@ -31,23 +29,22 @@ export const lightTheme = createTheme({
   },
 });
 
-// Dark theme configuration
 export const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#BB86FC", // Lavender
+      main: "#BB86FC",
     },
     secondary: {
-      main: "#03DAC6", // Turquoise
+      main: "#03DAC6",
     },
     background: {
-      default: "#121212", // Dark Grey
-      paper: "#1E1E1E", // Charcoal
+      default: "#121212",
+      paper: "#1E1E1E",
     },
     text: {
-      primary: "#FFFFFF", // White
-      secondary: "#CCCCCC", // Light Grey
+      primary: "#FFFFFF",
+      secondary: "#CCCCCC", 
     },
   },
   typography: {

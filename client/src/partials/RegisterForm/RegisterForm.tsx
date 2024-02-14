@@ -1,9 +1,8 @@
-// src/components/RegisterForm.tsx
 import React from "react";
 import { Button, TextField, InputAdornment, IconButton } from "@mui/material";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import { useRegisterForm } from "../../hooks/useRegisterForm"; // Adjust the import path as necessary
+import { useRegisterForm } from "../../hooks/useRegisterForm";
 
 const RegisterForm: React.FC = () => {
   const {

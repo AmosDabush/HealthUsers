@@ -31,7 +31,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 
   useEffect(() => {
     const token = Cookies.get("token");
-    console.log({ token });
 
     if (!token) {
       setIsLoggedIn(false);
@@ -42,13 +41,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     }
 
     const decoded = jwtDecode(token);
-    console.log({ decoded: decoded, token: token });
     const tokenExpiration = decoded.exp ? decoded.exp * 1000 : 0;
-    console.log("tokenExpiration", tokenExpiration);
     if (tokenExpiration) {
       const expirationDate = new Date(tokenExpiration);
 
-      if (expirationDate < new Date()) {
+      if (expirationDate < new Date() && isLoggedIn) {
         navigate("/login");
         setIsLoggedIn(false);
       }
