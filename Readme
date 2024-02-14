@@ -55,7 +55,11 @@ yarn start OR npm run start
 # Seed the database with mock users
 # note!!! this will work only in linux bash envirament
 yarn seed:new OR npm run seed:new
+
+# use port 80 for the client 
+http://localhost:80/
 ```
+
 
 OR, for manual setup:
 
@@ -78,6 +82,9 @@ npm run start
 # Seed the database
 # note!!! this will work only in linux bash envirament
 npm run seed:new
+
+# use port 80 for the client 
+http://localhost:80/
 ```
 
 ## Project Insights
