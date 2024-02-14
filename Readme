@@ -47,13 +47,14 @@ The Health User Management System is a sophisticated full-stack application dedi
 
 ```bash
 # Install dependencies and start the application
-yarn setup
+yarn setup OR npm run setup
 
 # Start the app with docker compose
-npm run start
+yarn start OR npm run start
 
 # Seed the database with mock users
-npm run seed:new
+# note!!! this will work only in linux bash envirament
+yarn seed:new OR npm run seed:new
 ```
 
 OR, for manual setup:
@@ -75,6 +76,7 @@ npm install
 npm run start
 
 # Seed the database
+# note!!! this will work only in linux bash envirament
 npm run seed:new
 ```
 
