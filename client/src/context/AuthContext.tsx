@@ -46,6 +46,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
       const expirationDate = new Date(tokenExpiration);
 
       if (expirationDate < new Date() && isLoggedIn) {
+        Cookies.remove("token");
         navigate("/login");
         setIsLoggedIn(false);
       }
